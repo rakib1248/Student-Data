@@ -2,6 +2,7 @@ const form = document.getElementById("student_form");
 const ShowData = document.getElementById("all_studenData");
 const msg = document.querySelector("#msg");
 const ShowSingleStnd = document.querySelector(".student-single-Data");
+const closerModal = document.querySelector("#closer-modal");
 
 // Show All STudentData
 const allStudentDataList = () => {
@@ -104,6 +105,7 @@ form.onsubmit = (e) => {
     });
 
     e.target.reset();
+    closerModal.click();
     allStudentDataList();
   }
 };
